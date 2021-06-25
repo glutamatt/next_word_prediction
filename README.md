@@ -26,7 +26,7 @@ Open your browser http://localhost:8000
 # Docker run
 
 ```
-docker run -it --rm -v `pwd`/:/lab python /bin/bash
+docker run -it --rm -p 8000:8000 -v `pwd`/:/lab python /bin/bash
 cd /lab/
 pip install -r requirements.txt
 python app.py
